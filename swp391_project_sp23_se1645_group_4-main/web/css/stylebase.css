@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital@0;1&display=swap');
+body
+{
+    background-color:#141019;
+    background: radial-gradient(at 50% -20%, #908392, #0d060e) fixed;
+}
+
+
+#handboy
+{
+    animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 98% 98%;
+    transform-box: fill-box;
+
+}
+
+
+#girllight
+{
+    animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 0% 97%;
+    transform-box: fill-box;
+}
+
+#hairgirl
+{
+    animation: swinghair ease-in-out 1.3s infinite alternate;
+    transform-origin: 60% 0%;
+    transform-box: fill-box;
+
+}
+
+#zero
+{
+    transform-origin:bottom;
+    transform-box:fill-box;
+
+}
+
+/*************swing************/
+@keyframes swing {
+    0% { transform: rotate(10deg); }
+    100% { transform: rotate(-10deg); }
+}
+
+
+/*************swing hair************/
+@keyframes swinghair {
+    0% { transform: rotate(6deg); }
+    100% { transform: rotate(-6deg); }
+}
+
+/*//--------- Paging*/
+.card-body .content__paging{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body .content__paging .number-page{
+    display: flex;
+}
+
+.card-body .content__paging ul{
+    display: flex;
+    justify-content: center;
+}
+
+.card-body .content__paging li{
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.card-body .content__paging ul li a{
+    color:black;
+    text-decoration: none;
+}
+
+.card-body .btn-active{
+    color: #c6c9cc;
+    border: solid 1px #c6c9cc !important;
+}
+
+.card-body .content__paging .active{
+    background: #0ddbb9;
+    border: 1px solid #0ddbb9;
+}
+
+.card-body .content__paging .active a{
+    color: #000;
+}
+
+/*//--------- Search*/
+.horizontal-menu .bottom-navbar.close{
+    top: -160px;
+}
+.card .card-body .box-search .btn-success{
+    height: 100%;
+}
+
+.school-bg{
+    background: url('https://wallpapercave.com/wp/wp2346106.jpg');
+    background-size: contain;
+    height: 150px;
+    z-index: 1;
+}
+.school-bg::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.4);
+    z-index: -1;
+}
+.school-bg .card-body .text-title{
+    font-family: 'Shantell Sans';
+    color: #ffffff;
+}
+.card .card-body .search-bar{
+    position: relative;
+    width: 40%;
+    max-width: 300px;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    border-radius: 60px;
+    padding: 5px 10px 5px 20px;
+}
+.card .card-body .search-bar input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.card .card-body .search-bar input::placeholder{
+    color: #FFFFFF;
+    font-family: 'Shantell Sans';
+    opacity: 0.6;
+}
+.card .card-body .search-bar .icon_Search .bi-search{
+    color: #000;
+}
+.card .card-body .search-bar .icon_Search .bi-search:hover{
+    color: #ffffff;
+}
+.card .card-body .search-bar .icon_Search{
+    border: 0;
+    border-radius: 50%;
+    background: #0ddbb9;
+    text-decoration: none;
+    padding: 7px;
+    cursor: pointer;
+}
+
+/*//--------- Select Dashboard*/
+.select_box .div_boxSelect{
+    position: relative;
+    background: url('https://wallpapercave.com/wp/wp2346106.jpg');
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 1px 0px 20px 12px rgba(0,0,0,.2);
+    height: 200px;
+    z-index: 1;
+}
+.select_box .div_boxSelect::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgba(0,0,0, 0.4);
+}
+.select_box .div_boxSelect .dropdown_selectBox{
+    position: relative;
+    width: 300px;
+    height: 50px;
+}
+.select_box .div_boxSelect .dropdown_selectBox:before{
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 10000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid #333;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(-45deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+.select_box .div_boxSelect .dropdown_selectBox.active:before{
+    transform: rotate(-225deg);
+    top: 22px;
+}
+.select_box .div_boxSelect .dropdown_selectBox input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: #fff;
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+.select_box .div_boxSelect .dropdown_selectBox .option{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    box-shadow: 0 30px 30px rgba(0,0,0,.05);
+    border-radius: 10px;
+    overflow: auto;
+    display: none;
+}
+.select_box .div_boxSelect .dropdown_selectBox .option::-webkit-scrollbar{
+    display: none;
+}
+.select_box .div_boxSelect .dropdown_selectBox.active .option{
+    display: block;
+}
+.select_box .div_boxSelect .dropdown_selectBox .option li{
+    padding: 12px 20px;
+    cursor: pointer;
+}
+.select_box .div_boxSelect .dropdown_selectBox .option li a{
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Shantell Sans';
+    color: #000;
+    font-size: 16px;
+}
+.select_box .div_boxSelect .dropdown_selectBox .option li:hover{
+    background: #0ddbb9;
+    color: #fff;
+}
+.select_box .div_boxSelect .dropdown_selectBox .option li:hover a{
+    text-decoration: underline;
+    color: #fff;
+}
+
+

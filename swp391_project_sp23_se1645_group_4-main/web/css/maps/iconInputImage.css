@@ -1,0 +1,139 @@
+.imageBox{
+    position: relative;
+}
+.card-body .round1{
+    position: absolute;
+    top:  100px;
+    right: 10px;
+    background: #000000;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.card-body .round1 input[type='file']{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+.card-body .round2{
+    position: absolute;
+    bottom:  570px;
+    right: 10px;
+    background: #000000;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.card-body .round2 input[type='file']{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+/*//---------Notification*/
+.card-body .round3{
+    position: absolute;
+    bottom: 600px;
+    right: 10px;
+    background: #000000;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.card-body .round3 input[type='file']{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+/*//---------Parent*/
+.card-body .round4{
+    position: absolute;
+    bottom: 700px;
+    right: 10px;
+    background: #000000;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.card-body .round4 input[type='file']{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+/*//--------- Teacher*/
+.card-body .round5{
+    position: absolute;
+    bottom: 880px;
+    right: 10px;
+    background: #000000;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.card-body .round5 input[type='file']{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+
+/*//--------- Student*/
+.card-body .round6{
+    position: absolute;
+    bottom: 980px;
+    right: 10px;
+    background: #000000;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.card-body .round6 input[type='file']{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+
+/*//--------- Class*/
+.card-body .round7{
+    position: absolute;
+    bottom: 380px;
+    right: 10px;
+    background: #000000;
+    width: 32px;
+    height: 32px;
+    line-height: 33px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.card-body .round7 input[type='file']{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+/*//--------- Validate Error*/
+.invalid .form-message{
+    color: red;
+}
+.invalid input{
+    border: 2px solid red;
+}
+.invalid textarea.form-control-lg{
+    border: 2px solid red;
+}
